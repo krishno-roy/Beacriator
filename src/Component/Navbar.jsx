@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa"; // Icons for the hamburger menu
+import { FaBars, FaTimes, FaArrowRight } from "react-icons/fa"; // Icons for the hamburger menu and arrow
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu visibility
@@ -44,9 +44,10 @@ const Navbar = () => {
           <button>
             <a
               href="#"
-              className="bg-black rounded-full py-2 px-4 text-white text-lg hover:scale-105 transition-transform"
+              className="bg-black rounded-full py-2 px-4 text-white text-lg hover:scale-105 transition-transform flex items-center gap-2"
             >
-              Get in touch
+              <span>Get in touch</span>
+              <FaArrowRight />
             </a>
           </button>
         </div>
@@ -83,9 +84,10 @@ const Navbar = () => {
             <button>
               <a
                 href="#"
-                className="bg-black rounded-full py-2 px-4 text-white text-lg hover:scale-105 transition-transform"
+                className="bg-black rounded-full py-2 px-4 text-white text-lg hover:scale-105 transition-transform flex items-center gap-2"
               >
-                Get in touch
+                <span>Get in touch</span>
+                <FaArrowRight />
               </a>
             </button>
           </div>
