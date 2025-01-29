@@ -4,6 +4,7 @@ import Image2 from "../assets/bg-2.jpg";
 import Image3 from "../assets/HeroImage.jpeg";
 import Toggle from "./Toggle";
 import Counter from "./Counter";
+import ImageGridSection from "./ImageGridSection";
 
 const Home = () => {
   return (
@@ -68,29 +69,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Image Grid Section */}
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[1, 2, 3].map((item) => (
-            <div key={item} className="relative group">
-              <img
-                src={Image}
-                alt="Work Example"
-                className="w-full h-120 sm:h-80 object-cover rounded-3xl lg:h-150 "
-              />
-              <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white rounded-b-3xl">
-                <h2 className="text-xl font-bold">Burgerking</h2>
-                <p className="text-sm mt-2">
-                  Annika und Riton haben bei der Burgerking Marketingkampagne
-                  richtig abgeliefert!
-                </p>
-                <button className="mt-4 text-sm font-semibold py-2 px-4 bg-pink-500 rounded-xl">
-                  <a href="#">Discover More</a>
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-
+          <ImageGridSection/>
         {/* Experts Section */}
         <div className="mt-20 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
