@@ -3,6 +3,7 @@ import Image from "../assets/bg-1.png";
 import Image2 from "../assets/bg-2.jpg";
 import Image3 from "../assets/HeroImage.jpeg";
 import Toggle from "./Toggle";
+import Counter from "./Counter";
 
 const Home = () => {
   return (
@@ -103,18 +104,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[1, 2, 3].map((item) => (
-            <div
-              key={item}
-              className="bg-pink-300 py-8 px-6 text-center rounded-3xl hover:scale-105 transition-transform duration-300"
-            >
-              <h2 className="text-5xl sm:text-6xl font-bold">24</h2>
-              <p className="text-xl sm:text-2xl font-semibold mt-2">Creator</p>
-            </div>
-          ))}
-        </div>
+        <Counter />
 
         <Toggle />
 
